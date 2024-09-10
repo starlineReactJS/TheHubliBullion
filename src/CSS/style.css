@@ -39,6 +39,7 @@ p {
 }
 span.spt-rt {
     font-size: 22px;
+    padding: 2px 5px;
 }
 tr.product-title-color.ligh-white {
     border-bottom: 1px solid rgb(135 105 62);

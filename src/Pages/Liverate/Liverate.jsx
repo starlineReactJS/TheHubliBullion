@@ -239,7 +239,7 @@ export default function Liverate() {
                                                 <span className="spt-lf">BID</span>
                                             </td>
                                             <td className="product-header">
-                                                <span className="spt-rt ">{item?.Bid}</span>
+                                                <span className={`spt-rt ${bgBid}`}>{item?.Bid}</span>
                                             </td>
                                         </tr>
                                         <tr className="product-title-color ref-rate">
@@ -247,7 +247,7 @@ export default function Liverate() {
                                                 <span className="spt-lf">ASK</span>
                                             </td>
                                             <td className="product-header">
-                                                <span className="spt-rt ">{item?.Ask}</span>
+                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -337,7 +337,7 @@ export default function Liverate() {
                                                 <span className="spt-lf">BID</span>
                                             </td>
                                             <td className="product-header">
-                                                <span className="spt-rt ">{item?.Bid}</span>
+                                                <span className={`spt-rt ${bgBid}`}>{item?.Bid}</span>
                                             </td>
                                         </tr>
                                         <tr className="product-title-color ref-rate">
@@ -345,7 +345,7 @@ export default function Liverate() {
                                                 <span className="spt-lf">ASK</span>
                                             </td>
                                             <td className="product-header">
-                                                <span className="spt-rt ">{item?.Ask}</span>
+                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -432,7 +432,7 @@ export default function Liverate() {
                                     <tbody>
                                         <tr className="product-title-color ref-rate">
                                             <td className="product-header">
-                                                <span className="spt-rt ">{item?.Ask}</span>
+                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
                                             </td>
                                         </tr>
                                     </tbody>
