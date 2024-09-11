@@ -490,13 +490,11 @@ export default function Liverate() {
                                                         <td className="p-h p0">
                                                             <span>PRODUCT</span>
                                                         </td>
-                                                        <td className="p-h ph text-center"
-                                                            style={{ display: isbuy === "none" ? "none" : "", border: "0px" }}>
-                                                            <span>BUY</span>
+                                                        <td className="p-h ph text-center" style={{ display: (isbuy === "none" && islow === "none") ? "none" : "", border: 0 }}>
+                                                            <span style={{ display: isbuy === "none" ? "none" : "", border: "0px" }}>BUY</span>
                                                         </td>
-                                                        <td className="p-h ph text-center"
-                                                            style={{ display: issell === "none" ? "none" : "", border: "0px" }}>
-                                                            <span>SELL</span>
+                                                        <td className="p-h ph text-center" style={{ display: (issell === "none" && ishigh === "none") ? "none" : "", border: 0 }}>
+                                                            <span style={{ display: issell === "none" ? "none" : "", border: "0px" }}>SELL</span>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -511,7 +509,7 @@ export default function Liverate() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
             <div className="gold-spot-cover desinround">
                 <div className="container-fluid">
                     {!(!!isLoading?.referenceProductData) ?
@@ -533,6 +531,6 @@ export default function Liverate() {
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 }
