@@ -214,6 +214,16 @@ export default function Liverate() {
                                                     <h2>{Symbol_Name}</h2>
                                                 </span>
                                             </td>
+
+                                            <td className="product-header">
+                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table className="table border-none">
+                                    <tbody>
+                                        <tr className="product-title-color ref-rate">
                                             <td className="product-header" style={{ padding: "0px" }}>
                                                 <div
                                                     className="product-header font-rate-1 border-none"
@@ -228,26 +238,6 @@ export default function Liverate() {
                                                 >
                                                     <span>H</span> - {item?.High}
                                                 </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table className="table border-none">
-                                    <tbody>
-                                        <tr className="product-title-color ref-rate">
-                                            <td className="product-header">
-                                                <span className="spt-lf">BID</span>
-                                            </td>
-                                            <td className="product-header">
-                                                <span className={`spt-rt ${bgBid}`}>{item?.Bid}</span>
-                                            </td>
-                                        </tr>
-                                        <tr className="product-title-color ref-rate">
-                                            <td className="product-header">
-                                                <span className="spt-lf">ASK</span>
-                                            </td>
-                                            <td className="product-header">
-                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -312,6 +302,16 @@ export default function Liverate() {
                                                     <h2>{Symbol_Name}</h2>
                                                 </span>
                                             </td>
+
+                                            <td className="product-header">
+                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table className="table border-none">
+                                    <tbody>
+                                        <tr className="product-title-color ref-rate">
                                             <td className="product-header" style={{ padding: "0px" }}>
                                                 <div
                                                     className="product-header font-rate-1 border-none"
@@ -326,26 +326,6 @@ export default function Liverate() {
                                                 >
                                                     <span>H</span> - {item?.High}
                                                 </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table className="table border-none">
-                                    <tbody>
-                                        <tr className="product-title-color ref-rate">
-                                            <td className="product-header">
-                                                <span className="spt-lf">BID</span>
-                                            </td>
-                                            <td className="product-header">
-                                                <span className={`spt-rt ${bgBid}`}>{item?.Bid}</span>
-                                            </td>
-                                        </tr>
-                                        <tr className="product-title-color ref-rate">
-                                            <td className="product-header">
-                                                <span className="spt-lf">ASK</span>
-                                            </td>
-                                            <td className="product-header">
-                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -410,6 +390,16 @@ export default function Liverate() {
                                                     <h2>{Symbol_Name}</h2>
                                                 </span>
                                             </td>
+
+                                            <td className="product-header">
+                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table className="table border-none">
+                                    <tbody>
+                                        <tr className="product-title-color ref-rate">
                                             <td className="product-header" style={{ padding: "0px" }}>
                                                 <div
                                                     className="product-header font-rate-1 border-none"
@@ -424,15 +414,6 @@ export default function Liverate() {
                                                 >
                                                     <span>H</span> - {item?.High}
                                                 </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table className="table border-none">
-                                    <tbody>
-                                        <tr className="product-title-color ref-rate">
-                                            <td className="product-header">
-                                                <span className={`spt-rt ${bgAsk}`}>{item?.Ask}</span>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -459,22 +440,8 @@ export default function Liverate() {
                     <img id="advetiseImg" src={clientData?.[0]?.bannerWeb} alt="" />
                 </div>
             }
-            <div className="gold-spot-cover">
-                <div className="container-fluid">
-                    {!(!!isLoading?.referenceProductData) ?
-                        <Skeleton dependency={{ referenceProductData: referenceProductData }}
-                            isLoading={(data) => dataLoadedFn(data, "referenceProductData")} height='200px' />
-                        : <div style={{ display: !Object.values(displaySpot.current).includes(true) ? "none" : "" }}>
-                            <div style={{ display: !(!!isLoading?.referenceProductData) ? "none" : "block" }}>
-                                <div className="row">
-                                    {renderSpotProduct}
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
-            <h1 className='text-center' style={{ display: available, color: "#000", textAlign: "center", background: "#fff", padding: "8px", }}>Live Rate currently not available.</h1>
+
+            <h1 className='text-center' style={{ display: available, color: "#fff", textAlign: "center", padding: "8px", }}>Live Rate currently not available.</h1>
             <div className="liverate-cover">
                 <div className="container-fluid">
                     <div className="row">
@@ -510,6 +477,21 @@ export default function Liverate() {
                     </div>
                 </div>
             </div >
+            <div className="gold-spot-cover">
+                <div className="container-fluid">
+                    {!(!!isLoading?.referenceProductData) ?
+                        <Skeleton dependency={{ referenceProductData: referenceProductData }}
+                            isLoading={(data) => dataLoadedFn(data, "referenceProductData")} height='200px' />
+                        : <div style={{ display: !Object.values(displaySpot.current).includes(true) ? "none" : "" }}>
+                            <div style={{ display: !(!!isLoading?.referenceProductData) ? "none" : "block" }}>
+                                <div className="row">
+                                    {renderSpotProduct}
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
             <div className="gold-spot-cover desinround">
                 <div className="container-fluid">
                     {!(!!isLoading?.referenceProductData) ?

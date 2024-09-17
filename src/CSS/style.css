@@ -51,7 +51,7 @@ tr.product-title-color.ligh-white {
 .spot-content .table > tbody > tr > td,  .spot-content .table > tbody > tr > td {
     width: 50%;
     text-align: center;
-    padding: 12px 0;
+    padding: 0px 0;
 }
  table.table.border-none {
     background: #000;
@@ -61,9 +61,9 @@ table.table.border-none.title-css{background: #000; border-radius: 20px 20px 0px
 .sml-rt, .product-header.font-rate-1.border-none {
     display: inline-block;
     color: rgb(255 255 255);
-    font-size: 16px;
+    font-size: 12px;
     margin: 0 5px;
-    padding-top: 8px;
+    padding: 10px 0;
 }
 .spot-title { position: relative; }
 .spot-title h2 {border-radius: 10px 0 0 0;text-align: left;margin: 0px;padding: 8px  0px 8px 10px;font-size: 20px;color: rgb(0 0 0);background: #ad8645;text-transform: uppercase;}
@@ -321,7 +321,7 @@ body:after {
 .mn-rate-cover .bgs {
     display: block;
     font-size: 14px;
-    color: #000;
+    color: #ad8645;
     line-height: normal;
     padding: 3px 0px 3px;
     font-weight: 600;
@@ -368,11 +368,11 @@ div#divProduct {
 .content-cover {
     display: inline-block;
     width: 100%;
-    border-bottom: 3px solid #917142;
+    border-bottom: 1px solid #917142;
     box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 10px;
     padding: 5px 0;
     margin-bottom: 0px;
-    background-color: #dad5d2;
+    background-color: #dad5d200;
 }
 
 .content-cover:last-child {
@@ -414,7 +414,7 @@ div#divProduct {
 .main-product-cover h3 {
     font-size: 22px;
     font-weight: 600;
-    color: #000;
+    color: #ad8645;
 }
 
 .product-rate {
@@ -426,7 +426,7 @@ div#divProduct {
     padding: 5px 10px;
     display: inline-block;
     font-weight: 600;
-    color: #000;
+    color: #fff;
 }
 
 table {
@@ -478,15 +478,15 @@ span.bgm.e.redbg {
 }
 
 .h {
-    border-radius: 3px;
-    background: #008000;
-    color: var(--white) !important;
+
+    color: #008000 !important;
+
 }
 
 .l {
-    border-radius: 3px;
-    background: #dc0000;
-    color: var(--white) !important;
+
+    color: #dc0000 !important;
+
 }
 
 .e {
