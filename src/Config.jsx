@@ -25,8 +25,8 @@ export const footerData = {
     logo: slLogo,
     companyLink: "http://www.starlinetechno.net/",
 };
-export const androidUrl = "#";
-export const iosUrl = "#";
+export const androidUrl = "https://play.google.com/store/apps/details?id=com.thehubalibullion";
+export const iosUrl = "https://apps.apple.com/us/app/the-hubali-bullion/id6670778405";
 export const economicCalendar = "https://www.mql5.com/en/economic-calendar/widget?mode=1&amp;";
 export const coinImgUrl = "https://www.starlinejewellers.co.in/images/coin/";
 export const hasOtr = true;
