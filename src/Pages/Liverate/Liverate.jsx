@@ -3,7 +3,12 @@ import { useSelector } from 'react-redux';
 import pako from "pako";
 import { Toast, backgroundColorClass, usePrevious, usePreviousReference } from '../../Utils';
 import { Skeleton } from '../../Components/Skeleton';
+import DateClock from '../../Components/Date Clock';
 import { SocketContext } from '../../Layout';
+import IndiaFlag from "../../Images/ind.png";
+import UKFlag from "../../Images/uk.png";
+import USAFlag from "../../Images/us.png";
+
 
 export default function Liverate() {
     let socketContext = useContext(SocketContext);
@@ -442,6 +447,19 @@ export default function Liverate() {
             }
 
             <h1 className='text-center' style={{ display: available, color: "#fff", textAlign: "center", padding: "8px", }}>Live Rate currently not available.</h1>
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="timecover">
+                            <DateClock timezone={"Asia/Kolkata"} image={IndiaFlag} />
+                            <DateClock timezone={"Europe/London"} image={UKFlag} />
+                            <DateClock timezone={"America/New_York"} image={USAFlag} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div className="liverate-cover">
                 <div className="container-fluid">
                     <div className="row">

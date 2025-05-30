@@ -9,10 +9,8 @@ export default function About() {
             <div className="container">
               <div className="col-md-12">
                 <div className="header">
-                  <div className="title-wth title-name">
-                    ABOUT US
-                    <div className="mn-title-border">
-                    </div>
+                  <div className="title-wth title-name">ABOUT US<div className="mn-title-border">
+                  </div>
                   </div>
                 </div>
               </div>

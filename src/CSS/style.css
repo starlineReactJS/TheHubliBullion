@@ -1,4 +1,7 @@
-* { outline: none;font-family: "Roboto", sans-serif;}
+* {
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
 
 :root {
     --mainColor_1: #135056;
@@ -15,7 +18,11 @@ body {
     line-height: normal;
     font-family: "Roboto", sans-serif;
 }
-.table>tbody>tr>td{border: 0px; margin: 0px;}
+
+.table>tbody>tr>td {
+    border: 0px;
+    margin: 0px;
+}
 
 * {
     margin: 0px;
@@ -31,42 +38,79 @@ h5,
 h6 {
     margin: 0px;
 }
+
 .container-fluid {
-    width: 70%;}
-.table{margin: 0px;}
+    width: 70%;
+}
+
+.table {
+    margin: 0px;
+}
+
 p {
     margin: 0px;
 }
+
 span.spt-rt {
     font-size: 22px;
     padding: 2px 5px;
 }
+
 tr.product-title-color.ligh-white {
     border-bottom: 1px solid rgb(135 105 62);
 }
-.table>tbody>tr>td{padding: 0px;}
-#divSpot .product-title-color, #divFuture .product-title-color, #divNext .product-title-color {
+
+.table>tbody>tr>td {
+    padding: 0px;
+}
+
+#divSpot .product-title-color,
+#divFuture .product-title-color,
+#divNext .product-title-color {
     background: #000000;
 }
-.spot-content .table > tbody > tr > td,  .spot-content .table > tbody > tr > td {
+
+.spot-content .table>tbody>tr>td,
+.spot-content .table>tbody>tr>td {
     width: 50%;
     text-align: center;
     padding: 0px 0;
 }
- table.table.border-none {
+
+table.table.border-none {
     background: #000;
     border-radius: 0px 0px 20px 20px;
 }
-table.table.border-none.title-css{background: #000; border-radius: 20px 20px 0px 0px;}
-.sml-rt, .product-header.font-rate-1.border-none {
+
+table.table.border-none.title-css {
+    background: #000;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.sml-rt,
+.product-header.font-rate-1.border-none {
     display: inline-block;
     color: rgb(255 255 255);
     font-size: 12px;
     margin: 0 5px;
     padding: 10px 0;
 }
-.spot-title { position: relative; }
-.spot-title h2 {border-radius: 10px 0 0 0;text-align: left;margin: 0px;padding: 8px  0px 8px 10px;font-size: 20px;color: rgb(0 0 0);background: #ad8645;text-transform: uppercase;}
+
+.spot-title {
+    position: relative;
+}
+
+.spot-title h2 {
+    border-radius: 10px 0 0 0;
+    text-align: left;
+    margin: 0px;
+    padding: 8px 0px 8px 10px;
+    font-size: 20px;
+    color: rgb(0 0 0);
+    background: #ad8645;
+    text-transform: uppercase;
+}
+
 /* liverate page css start */
 .header-cover div#navbarsExample07 {
     justify-content: center;
@@ -75,6 +119,23 @@ table.table.border-none.title-css{background: #000; border-radius: 20px 20px 0px
 
 button.navbar-toggler:focus {
     outline: 0px;
+}
+
+.flag img {
+    width: 50px;
+}
+
+.timecover {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.flag span {
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: #fff;
 }
 
 .header-cover .bg-dark .navbar-toggler {
@@ -636,7 +697,7 @@ span.bgm.e.redbg {
         padding: 0px 0px;
     }
 
-  
+
 
     .booking-no p span {
         font-size: 12px;
@@ -657,7 +718,10 @@ span.bgm.e.redbg {
     .cnt-cover {
         margin-top: 10px;
     }
-    .spot-title h2 {font-size: 13px;}
+
+    .spot-title h2 {
+        font-size: 13px;
+    }
 
     .navbar-brand.res {
         display: block;
@@ -1409,7 +1473,7 @@ input#txtStartDate:focus {
 .thm-btn.bgclr-1 {
     padding: 7px 24px;
     letter-spacing: 0;
-    background:#000;
+    background: #000;
     border-radius: 3px;
     color: var(--white);
     transition: 0.5s;
@@ -1439,6 +1503,7 @@ input#save:focus {
     .cnt-title h2 {
         font-size: 24px;
     }
+
     .container-fluid {
         width: 100%;
     }
@@ -1446,10 +1511,15 @@ input#save:focus {
 }
 
 @media screen and (max-width:767px) {
+
     .cnt-title h2 {
         font-size: 20px;
     }
-    .sml-rt, .product-header.font-rate-1.border-none{font-size: 12px;}
+
+    .sml-rt,
+    .product-header.font-rate-1.border-none {
+        font-size: 12px;
+    }
 
     .feedback-cover1 {
         margin-top: 10px;
@@ -1460,10 +1530,29 @@ input#save:focus {
         font-size: 18px;
     }
 
+    .flag span {
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    .flag {
+        text-align: center;
+    }
+
+    .flag img {
+        width: 40px;
+    }
+
 }
 
 
+
+
+
 @media screen and (max-width:420px) {
+
+
     .cnt-title h2 {
         font-size: 16px;
     }
